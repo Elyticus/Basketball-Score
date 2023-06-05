@@ -124,3 +124,18 @@ button:hover {
   color: rgb(255, 255, 255);
   text-shadow: 2px 3px rgb(0, 0, 0);
 }
+
+@media all and (max-width: 40.625rem) {
+  .container {
+    margin-top: 50%;
+  }
+  button {
+    font-weight: 100;
+    border: 1px solid white;
+  }
+
+  button:hover {
+    font-weight: 100;
+    border: 1px solid black;
+  }
+}
