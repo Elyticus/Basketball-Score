@@ -1,0 +1,126 @@
+body {
+  margin: 0;
+  background: linear-gradient(45deg, #c96f09, #0c46b1);
+  color: white;
+  font-family: "Oswald", sans-serif;
+  font-size: 2rem;
+  letter-spacing: 2px;
+  overflow: hidden;
+  text-align: center;
+}
+
+@font-face {
+  font-family: CrusedTimer;
+  src: url(CursedTimerUlil-Aznm.ttf);
+}
+
+.display_home_score,
+.display_guest_score {
+  font-family: CrusedTimer;
+  color: rgba(229, 255, 0, 0.815);
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 10%;
+}
+
+#home h3,
+#guest h3 {
+  margin-bottom: 10px;
+}
+
+#home p,
+#guest p {
+  height: 6.25rem;
+  margin: 0;
+  font-size: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#score_home,
+#score_guest {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: black;
+  width: 155px;
+  height: 120px;
+  left: 82px;
+  top: 125px;
+  border-radius: 5px;
+}
+
+#score_home {
+  border: 7px solid #0059ff;
+}
+
+#score_guest {
+  border: 7px solid #ff8801;
+}
+
+.flex_btn {
+  margin: 10px 10px 0 10px;
+}
+
+button {
+  cursor: pointer;
+  background: transparent;
+  border: 2px solid white;
+  color: white;
+  border-radius: 5px;
+  padding: 10px;
+  font-weight: bold;
+}
+
+button:hover {
+  border: 2px solid black;
+  background: black;
+  color: rgb(0, 204, 255);
+  transition: 0.5ms ease-in-out;
+}
+
+#guest_1:hover,
+#guest_2:hover,
+#guest_3:hover {
+  color: #ff8801;
+}
+
+.newGame {
+  position: absolute;
+  width: 250px;
+  height: 50px;
+  display: flex;
+  margin-top: 350px;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+}
+
+.newGame:hover {
+  box-shadow: 0px 0px 25px rgba(255, 166, 0, 0.966);
+}
+
+#timer-display {
+  position: absolute;
+  display: flex;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  text-shadow: 0px 0px 7px white;
+  margin-top: -50px;
+}
+
+#time_end {
+  position: absolute;
+  display: none;
+  margin-top: -50px;
+  background: rgb(255, 51, 0);
+  padding: 10px 20px;
+  border-radius: 7px;
+  color: rgb(255, 255, 255);
+  text-shadow: 2px 3px rgb(0, 0, 0);
+}

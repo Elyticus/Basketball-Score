@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Favicon Link -->
+    <link rel="shortcut icon" href="#" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS Style Link -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Document Title -->
+    <title>Basketball Scoreboard</title>
+  </head>
+
+  <!-- HTML Body Structure -->
+  <body>
+    <div class="container">
+      <p id="timer-display">00:00</p>
+
+      <p id="time_end">Time Out!</p>
+
+      <div id="home">
+        <h3>HOME</h3>
+
+        <div id="score_home">
+          <p class="display_home_score">0</p>
+        </div>
+
+        <div class="flex_btn">
+          <button id="add_1">+1</button>
+          <button id="add_2">+2</button>
+          <button id="add_3">+3</button>
+        </div>
+      </div>
+
+      <div id="guest">
+        <h3>GUEST</h3>
+
+        <div id="score_guest">
+          <p class="display_guest_score">0</p>
+        </div>
+
+        <div class="flex_btn">
+          <button id="guest_1">+1</button>
+          <button id="guest_2">+2</button>
+          <button id="guest_3">+3</button>
+        </div>
+      </div>
+      <button id="reset-timer" class="newGame">New Game</button>
+    </div>
+
+    <!-- JavaScript File Link -->
+    <script src="script.js"></script>
+  </body>
+</html>
